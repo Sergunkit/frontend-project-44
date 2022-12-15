@@ -6,3 +6,5 @@ publish:
 	npm publish --dry-run
 .PHONY:
 	test
+lint:
+	npx eslint .
