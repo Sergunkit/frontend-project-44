@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import readlineSync from 'readline-sync';
 import { name, greating } from '../src/cli.js';
 
