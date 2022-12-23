@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 // Модуль запускает приветствие, затем все импортиров-е игры поочереди
-import { greating } from '../src/cli.js';
 import game from '../src/index.js';
 import isEven from './brain-even.js';
 import calc from './brain-calc.js';
