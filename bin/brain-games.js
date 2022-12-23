@@ -1,12 +1,16 @@
 #!/usr/bin/env node
-import { greating, name } from '../src/cli.js';
-import { isEven } from './brain-even.js';
 
-greating();
-let correctAnswer = 0;
-for (let i = 0; i < 3; i += 1) {
-  correctAnswer += isEven();
-}
-if (correctAnswer === 3) {
-  console.log(`Congratulations, ${name}!`);
-}
+// Модуль запускает приветствие, затем все импортиров-е игры поочереди
+import { greating } from '../src/cli.js';
+import game from '../src/index.js';
+import isEven from './brain-even.js';
+import calc from './brain-calc.js';
+import gcd from './brain-gcd.js';
+import progression from './brain-progression.js';
+import isPrime from './brain-prime.js';
+
+game(isEven);
+game(calc);
+game(gcd);
+game(progression);
+game(isPrime);

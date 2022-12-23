@@ -1,5 +1,4 @@
-#!/usr/bin/env node
-
+// Реализация игры на определение простых чисел
 import readlineSync from 'readline-sync';
 import { name } from '../src/cli.js';
 import game from '../src/index.js';
@@ -9,17 +8,16 @@ const isPrime = () => {
   const num = Math.ceil(Math.random() * 10);
   console.log(`Question: ${num}`);
   let correctAns = 'yes';
-  for (let i = 2; i < num / 2; i += 1) {
-    if (num % i === 0) { correctAns = 'no'; }
+  for (let i = 2; i <= num / 2; i += 1) { // Перебор до половины загаданного числа.
+    if (num % i === 0) { correctAns = 'no'; } // Определяется делится ли оно на что-нибудь нацело.
   }
   const answer = readlineSync.question('Your answer: ');
   if (correctAns === answer) {
     console.log('Correct!');
-    return 1;
+    return 1; // Возврат '1' для подсчета правилных ответов в функции game
   }
   console.log(`'${answer}' is wrong answer ;(. Correct answer was ${correctAns}.\nLet's try again, ${name}!`);
-  return 0;
+  return 0; // При неправильном ответе возвращается '0'
 };
-game(isPrime);
 
-export default isPrime;
+export default isPrime; // Экспорт для brain-games

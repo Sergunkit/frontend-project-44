@@ -1,9 +1,7 @@
-#!/usr/bin/env node
-
-import { name, greating } from './cli.js';
+// Реализует проверку количества правильных ответов
+import { name } from './cli.js';
 
 const game = (funk) => {
-  greating();
   let correctAnswer = 0;
   for (let i = 0; i < 3; i += 1) {
     correctAnswer += funk();
