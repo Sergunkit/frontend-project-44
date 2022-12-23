@@ -19,7 +19,7 @@ make install
 make brain-games - вызывает все игры по очередности
 ```
 ```bash
-make <game name> - вызывает игру по имени
+make game-name - вызывает игру по имени
 ```
 
 ### Hexlet tests and linter status:
