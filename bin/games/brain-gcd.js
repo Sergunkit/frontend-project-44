@@ -1,6 +1,6 @@
 // Реализация игры по вычислению НОД
 import readlineSync from 'readline-sync';
-import { name } from '../src/cli.js';
+import { name } from '../../src/cli.js';
 
 const gcd = () => {
   let res = 0;

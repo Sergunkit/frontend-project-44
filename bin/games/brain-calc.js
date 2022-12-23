@@ -1,6 +1,6 @@
 // Реализация игры по вычислению выражений
 import readlineSync from 'readline-sync';
-import { name } from '../src/cli.js';
+import { name } from '../../src/cli.js';
 
 const calc = () => {
   console.log('What is the result of the expression?');

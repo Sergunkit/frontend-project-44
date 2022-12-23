@@ -1,6 +1,6 @@
 // Реализация игры на последовательности
 import readlineSync from 'readline-sync';
-import { name } from '../src/cli.js';
+import { name } from '../../src/cli.js';
 
 const progression = () => {
   console.log('What number is missing in the progression?');

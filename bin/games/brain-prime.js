@@ -1,6 +1,6 @@
 // Реализация игры на определение простых чисел
 import readlineSync from 'readline-sync';
-import { name } from '../src/cli.js';
+import { name } from '../../src/cli.js';
 
 const isPrime = () => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
