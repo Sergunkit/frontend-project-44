@@ -15,7 +15,7 @@ const isEven = () => {
     console.log('Correct!');
     return 1; // Возвращает '1' для счета корректных ответов в функции game
   }
-  console.log(`${answer} is wrong answer ;(. Correct answer was '${even ? 'yes' : 'no'}'.`);
+  console.log(`'${answer}' is wrong answer ;(. Correct answer was '${even ? 'yes' : 'no'}'.`);
   console.log(`Let's try again, ${name}!`);
   return 0; // При неверном ответе возвращает '0'
 };

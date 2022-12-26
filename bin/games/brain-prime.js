@@ -18,7 +18,7 @@ const isPrime = () => {
     console.log('Correct!');
     return 1; // Возврат '1' для подсчета правилных ответов в функции game
   }
-  console.log(`'${answer}' is wrong answer ;(. Correct answer was ${correctAns}.\nLet's try again, ${name}!`);
+  console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAns}'.\nLet's try again, ${name}!`);
   return 0; // При неправильном ответе возвращается '0'
 };
 game(isPrime);
