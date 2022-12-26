@@ -1,6 +1,9 @@
+#!/usr/bin/env node
+
 // Реализация игры по вычислению НОД
 import readlineSync from 'readline-sync';
 import { name } from '../../src/cli.js';
+import game from '../../src/index.js';
 
 const gcd = () => {
   let res = 0;
@@ -21,5 +24,6 @@ const gcd = () => {
   console.log(`'${answer}' is wrong answer ;(. Correct answer was ${res}.\nLet's try again, ${name}!`);
   return 0; // При неверном ответе возвращает '0'
 };
+game(gcd);
 
 export default gcd; // Экспорт для brain-games

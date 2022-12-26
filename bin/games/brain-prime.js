@@ -1,6 +1,9 @@
+#!/usr/bin/env node
+
 // Реализация игры на определение простых чисел
 import readlineSync from 'readline-sync';
 import { name } from '../../src/cli.js';
+import game from '../../src/index.js';
 
 const isPrime = () => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
@@ -18,5 +21,6 @@ const isPrime = () => {
   console.log(`'${answer}' is wrong answer ;(. Correct answer was ${correctAns}.\nLet's try again, ${name}!`);
   return 0; // При неправильном ответе возвращается '0'
 };
+game(isPrime);
 
 export default isPrime; // Экспорт для brain-games
