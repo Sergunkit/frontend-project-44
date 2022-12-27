@@ -1,6 +1,9 @@
+#!/usr/bin/env node
+
 // Реализация игры по вычислению выражений
 import readlineSync from 'readline-sync';
 import { name } from '../../src/cli.js';
+import game from '../../src/index.js';
 
 const calc = () => {
   console.log('What is the result of the expression?');
@@ -28,5 +31,6 @@ const calc = () => {
   console.log(`'${answer}' is wrong answer ;(. Correct answer was ${expression}.\nLet's try again, ${name}!`);
   return 0; // При неверном ответе возвращает '0'
 };
+game(calc);
 
 export default calc;
