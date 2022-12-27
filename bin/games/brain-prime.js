@@ -10,7 +10,7 @@ const isPrime = () => {
   const num = Math.ceil(Math.random() * 10);
   console.log(`Question: ${num}`);
   let correctAns = 'yes';
-  for (let i = 2; i <= num / 2; i += 1) { // Перебор до половины загаданного числа.
+  for (let i = 2; i <= num / 2; i += 1) { // Перебор до половины заданного числа.
     if (num % i === 0) { correctAns = 'no'; } // Определяется делится ли оно на что-нибудь нацело.
   }
   const answer = readlineSync.question('Your answer: ');
@@ -18,9 +18,10 @@ const isPrime = () => {
     console.log('Correct!');
     return 1; // Возврат '1' для подсчета правилных ответов в функции game
   }
-  console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAns}'.\nLet's try again, ${name}!`);
+  console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAns}'.`);
+  console.log(`Let's try again, ${name}!`);
   return 0; // При неправильном ответе возвращается '0'
 };
 game(isPrime);
 
-export default isPrime; // Экспорт для brain-games
+export default isPrime;
