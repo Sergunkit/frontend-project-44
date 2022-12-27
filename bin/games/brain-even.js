@@ -9,7 +9,7 @@ const isEven = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   const number = Math.ceil(Math.random() * 10);
   const even = number % 2 === 0;
-  console.log(`Question: ${number}`);
+  console.log(`'Question: ${number}'`);
   const answer = (readlineSync.question('Your answer: '));
   if ((even && answer === 'yes') || (!even && answer === 'no')) {
     console.log('Correct!');
