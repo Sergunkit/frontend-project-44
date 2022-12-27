@@ -26,4 +26,4 @@ const gcd = () => {
 };
 game(gcd);
 
-export default gcd; // Экспорт для brain-games
+export default gcd; // Экспорт для возможного расширения функционала

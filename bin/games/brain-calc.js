@@ -33,4 +33,4 @@ const calc = () => {
 };
 game(calc);
 
-export default calc;
+export default calc; // Экспорт для возможного расширения функционала

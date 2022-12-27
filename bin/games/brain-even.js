@@ -21,4 +21,4 @@ const isEven = () => {
 };
 game(isEven);
 
-export default isEven; // Экспорт для brain-games
+export default isEven; // Экспорт для возможного расширения функционала

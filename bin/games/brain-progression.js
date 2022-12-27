@@ -29,4 +29,4 @@ const progression = () => {
 };
 game(progression);
 
-export default progression; // Экспорт для brain-games
+export default progression; // Экспорт для возможного расширения функционала

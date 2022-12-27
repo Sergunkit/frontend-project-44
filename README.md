@@ -1,6 +1,7 @@
 # Console games
 
-```brain-even - определение четности, 
+```bash
+brain-even - определение четности, 
 brain-calc - вычисление выражений, 
 brain-gcd - определение НОД, 
 brain-progression - определение пропуска в прогрессии, 
@@ -16,15 +17,12 @@ make install
 # Start
 
 ```bash
-make brain-games - вызывает все игры по очередности
-```
-```bash
 make game-name - вызывает игру по имени
 ```
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Sergunkit/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Sergunkit/frontend-project-44/actions)
-<a href="https://codeclimate.com/github/Sergunkit/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/6a7c2aa108b0f7bdd7c3/maintainability" /></a>  ### Maintainability Badge
+<a href="https://codeclimate.com/github/Sergunkit/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/6a7c2aa108b0f7bdd7c3/maintainability" /></a>
 
 https://asciinema.org/a/682q79GDWCD9s8vgZxFS9PRdE
 

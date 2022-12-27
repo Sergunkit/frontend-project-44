@@ -24,4 +24,4 @@ const isPrime = () => {
 };
 game(isPrime);
 
-export default isPrime;
+export default isPrime; // Для возможного расширения функционала
