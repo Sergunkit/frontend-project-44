@@ -9,7 +9,7 @@ const progression = () => {
   console.log('What number is missing in the progression?');
   let start = Math.ceil(Math.random() * 10); // Начало последовательности
   const step = Math.ceil(Math.random() * 10); // Шаг
-  const long = Math.ceil(Math.random() * 10) + 2; // Длинна последовательности
+  const long = Math.ceil(Math.random() * 5 + 5); // Длинна последовательности 5 < 10
   const leftpos = Math.abs(Math.ceil(Math.random() * 10) - long); // индекс пропуска числа
   const numbers = [];
   for (let i = 0; i < long; i += 1) { // Формирование последовательности
@@ -18,7 +18,7 @@ const progression = () => {
   }
   const correctNum = numbers[leftpos];
   numbers[leftpos] = '..'; // Присваивание '..' на место пропуска
-  console.log(`Question: ${numbers}`);
+  console.log(`Question: ${numbers.join(' ')}`);
   const answer = Number(readlineSync.question('Your answer: '));
   if (correctNum === answer) {
     console.log('Correct!');
