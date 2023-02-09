@@ -10,6 +10,7 @@ const isPrime = () => {
   for (let i = 2; i <= num / 2; i += 1) { // Перебор до половины заданного числа.
     if (num % i === 0) { correctAns = 'no'; } // Определяется делится ли оно на что-нибудь нацело.
   }
+  if (num === 1) { correctAns = 'no'; }
   const answer = readlineSync.question('Your answer: ');
   if (correctAns === answer) {
     console.log('Correct!');
