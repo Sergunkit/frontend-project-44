@@ -2,8 +2,7 @@
 
 // Реализация игры на определение четности чисел
 import readlineSync from 'readline-sync';
-import { name } from '../../src/cli.js';
-import game from '../../src/index.js';
+import { name } from '../cli.js';
 
 const isEven = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
@@ -19,6 +18,5 @@ const isEven = () => {
   console.log(`Let's try again, ${name}!`);
   return 0; // При неверном ответе возвращает '0'
 };
-game(isEven);
 
 export default isEven; // Экспорт для возможного расширения функционала

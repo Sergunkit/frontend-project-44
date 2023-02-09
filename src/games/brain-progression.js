@@ -2,8 +2,7 @@
 
 // Реализация игры на последовательности
 import readlineSync from 'readline-sync';
-import { name } from '../../src/cli.js';
-import game from '../../src/index.js';
+import { name } from '../cli.js';
 
 const progression = () => {
   console.log('What number is missing in the progression?');
@@ -27,6 +26,5 @@ const progression = () => {
   console.log(`'${answer}' is wrong answer ;(. Correct answer was ${correctNum}.\nLet's try again, ${name}!`);
   return 0; // При неправильном ответе возвращается '0'
 };
-game(progression);
 
 export default progression; // Экспорт для возможного расширения функционала
