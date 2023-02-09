@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 // Реализация игры по вычислению выражений
 import readlineSync from 'readline-sync';
 import { name } from '../cli.js';

@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 // Реализация игры на определение простых чисел
 import readlineSync from 'readline-sync';
 import { name } from '../cli.js';

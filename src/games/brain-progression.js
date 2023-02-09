@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 // Реализация игры на последовательности
 import readlineSync from 'readline-sync';
 import { name } from '../cli.js';

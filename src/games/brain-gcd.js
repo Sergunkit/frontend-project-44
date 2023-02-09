@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 // Реализация игры по вычислению НОД
 import readlineSync from 'readline-sync';
 import { name } from '../cli.js';
